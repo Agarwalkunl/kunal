@@ -17,7 +17,7 @@ async function ged() {
   console.log("connect");
 }
 ged();
-app.get("https://exam-dry7.onrender.com/read", async (req, resp) => {
+app.get("/read", async (req, resp) => {
   let resuu = await col.find().toArray();
   resp.send(resuu);
 });
